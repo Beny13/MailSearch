@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 janv. 2015, 10:27:20
+    Author     : paul
+*/
+
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+    
+    color: #333333;
+    background-color: #e9eaed;
+
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 15px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.search-div {
+    position: absolute;
+    
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+    
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    
+    /*border: 1px solid black;*/
+}
+
+.search-div .search-field {
+    width: 400px;
+    height: 35px;
+    font-size: 1.5rem;
+}
+
+.search-div .depth-field {
+    width: 100px;
+    height: 35px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.search-div .search-submit {
+    width: 100px;
+    margin-top: -8px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+#login-block {
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    
+    /* border: 1px solid black; */
+}

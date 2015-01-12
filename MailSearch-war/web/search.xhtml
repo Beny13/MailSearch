@@ -1,12 +1,30 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
-        <title>Facelet Title</title>
+        <title>EmailSearch</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" />
+        <link type="text/css" rel="stylesheet" href="styles/search.css" />
     </h:head>
     <h:body>
-        Hello from Facelets
+        <f:view>
+            <h1>EmailSearch</h1>
+            <h2>by Jonathan DUFETEL, Paul FIORENTINO, Damien MAURIN</h2>
+            <h:form class="search-div">
+                <input type="text" name="search" value="" class="search-field" placeholder="Type your search" />
+                <input type="number" name="depth" value="" class="depth-field" placeholder="Depth (2)" min="1" max="3" />
+                <input type="submit" value="Search" name="search" class="btn btn-default search-submit" />
+            </h:form>
+            <h:panelGroup layout="block" id="login-block">
+                Hi, <h:outputText value="paul" /> - <a href="#">Logout <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
+            </h:panelGroup>
+        </f:view>
+
     </h:body>
 </html>
 
